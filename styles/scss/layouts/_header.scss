@@ -1,0 +1,27 @@
+@use '../abstracts/' as *;
+
+.header {
+  padding: 7rem 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    width: 50%;
+
+    & > * {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__heading {
+    @include text($fs-xl, 700);
+  }
+
+  &__sub {
+    @include text($fs-400, 400, 1.75);
+  }
+}

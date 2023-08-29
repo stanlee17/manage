@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $white;
+  font-family: $font-primary;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: $darkBlue;
+}
+
+p {
+  color: $darkGrayishBlue;
+}
+
+a {
+  text-decoration: none;
+}

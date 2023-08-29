@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 3.5rem;
+  font-size: $fs-300;
+  font-weight: 700;
+  border-radius: 10rem;
+
+  &--primary {
+    background-color: $brightRed;
+    box-shadow: 0px 15px 15px -10px #ff9f8e;
+    color: $white;
+  }
+}

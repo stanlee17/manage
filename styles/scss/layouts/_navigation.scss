@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+.navigation {
+  position: relative;
+  font-size: $fs-300;
+  padding: 5rem 0;
+
+  &__wrapper {
+    @include flexbox($justify: space-between, $align: center);
+  }
+
+  &__list {
+    display: flex;
+    gap: 3.5rem;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+  }
+}

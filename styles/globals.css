@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+/* MEDIA QUERIES */
+/* FLEXBOX PROPERTIES */
+/* FONTS */
+/* PRIMARY */
+/* NEUTRAL */
+/* FONT SIZES */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Be Vietnam Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: #242d52;
+}
+
+p {
+  color: #9095a7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 3.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 10rem;
+}
+.btn--primary {
+  background-color: #f25f3a;
+  box-shadow: 0px 15px 15px -10px #ff9f8e;
+  color: #ffffff;
+}
+
+.header {
+  padding: 7rem 0;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content {
+  width: 50%;
+}
+.header__content > * {
+  margin-bottom: 3rem;
+}
+.header__heading {
+  display: block;
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.header__sub {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.navigation {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 5rem 0;
+}
+.navigation__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__list {
+  display: flex;
+  gap: 3.5rem;
+}
+.navigation__item {
+  list-style: none;
+}
+.navigation__link {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+@media (max-width: 1240px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 540px;
+  }
+}
