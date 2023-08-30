@@ -13,6 +13,7 @@ $breakpoints: (
   }
 }
 
+/* TEXT PROPERTIES */
 @mixin text($size: 400, $weight: 400, $lineHeight: 1.25) {
   display: block;
   font-size: $size;
@@ -27,4 +28,19 @@ $breakpoints: (
   justify-content: $justify;
   align-items: $align;
   flex-wrap: $wrap;
+}
+
+/* POSITION PROPERTIES */
+@mixin position(
+  $position,
+  $top: auto,
+  $right: auto,
+  $bottom: auto,
+  $left: auto
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }

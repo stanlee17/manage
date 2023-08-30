@@ -1,27 +1,20 @@
 @use '../abstracts/' as *;
 
 .header {
+  position: relative;
   padding: 7rem 0;
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox($justify: space-between, $align: center);
+
+    &::after {
+      content: url('../../../images/bg-tablet-pattern.svg');
+      @include position($position: absolute, $bottom: 20rem, $right: -10rem);
+      z-index: -1;
+    }
   }
 
   &__content {
     width: 50%;
-
-    & > * {
-      margin-bottom: 3rem;
-    }
-  }
-
-  &__heading {
-    @include text($fs-xl, 700);
-  }
-
-  &__sub {
-    @include text($fs-400, 400, 1.75);
   }
 }

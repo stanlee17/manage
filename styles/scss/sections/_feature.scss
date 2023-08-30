@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.feature {
+  padding: 10rem 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    width: 45%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: start;
+
+    &-box {
+      width: 45%;
+
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__number {
+    @include text($fs-400, 700);
+    display: inline-block;
+    margin-top: -1rem;
+    margin-right: 2rem;
+    border-radius: 10rem;
+    padding: 1rem 2.5rem;
+    color: $white;
+    background-color: $brightRed;
+  }
+}
