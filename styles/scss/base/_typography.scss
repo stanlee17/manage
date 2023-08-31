@@ -19,13 +19,6 @@ p {
   color: $darkGrayishBlue;
 }
 
-.heading-primary,
-.heading-secondary,
-.heading-tertiary,
-.paragraph {
-  margin-bottom: 2rem;
-}
-
 .heading-primary {
   @include text($fs-xl, 700);
 }

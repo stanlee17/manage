@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+// Margins
+@include space('.m-t-', 'margin-top');
+@include space('.m-r-', 'margin-right');
+@include space('.m-b-', 'margin-bottom');
+@include space('.m-l-', 'margin-left');
+@include space('.m-x-', 'margin');
+
+// Paddings
+@include space('.p-t-', 'padding-top');
+@include space('.p-r-', 'padding-right');
+@include space('.p-b-', 'padding-bottom');
+@include space('.p-l-', 'padding-left');
+@include space('.p-x-', 'padding');
+
+.u-center-text {
+  text-align: center !important;
+}

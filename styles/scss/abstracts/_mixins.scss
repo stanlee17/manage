@@ -6,6 +6,20 @@ $breakpoints: (
   'xxl': 1400px,
 );
 
+$max: 15;
+$offset: 1;
+$unit: 'rem';
+
+@mixin space($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
 /* MEDIA QUERIES */
 @mixin breakpoint($size) {
   @media (max-width: map-get($breakpoints, $size)) {

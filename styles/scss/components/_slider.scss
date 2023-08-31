@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.slider {
+  display: flex;
+  gap: 4rem;
+
+  &__item {
+    position: relative;
+    background-color: $veryLightGray;
+  }
+
+  &__image {
+    @include position(absolute, $top: -3.5rem, $left: 0, $right: 0);
+    margin: 0 auto;
+    width: 72px;
+  }
+}
