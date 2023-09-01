@@ -2,16 +2,28 @@
 
 .slider {
   display: flex;
+  margin: 5rem;
   gap: 4rem;
 
   &__item {
     position: relative;
     background-color: $veryLightGray;
+    padding: 3rem;
   }
 
   &__image {
     @include position(absolute, $top: -3.5rem, $left: 0, $right: 0);
     margin: 0 auto;
     width: 72px;
+  }
+
+  &__heading {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 }

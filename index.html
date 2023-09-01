@@ -84,10 +84,10 @@
     <header class="header">
       <div class="header__wrapper container">
         <div class="header__content">
-          <h1 class="heading-primary m-b-3">
+          <h1 class="header__heading heading-primary">
             Bring everyone together to build better products.
           </h1>
-          <p class="paragraph m-b-3">
+          <p class="header__paragraph paragraph">
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the larger team goals in view.
           </p>
@@ -104,11 +104,11 @@
     <main>
       <section class="feature">
         <div class="feature__wrapper container">
-          <div class="feature__heading">
-            <h2 class="heading-secondary m-b-3">
+          <div class="feature-heading">
+            <h2 class="feature-heading__title heading-secondary m-b-3">
               What's different about Manage?
             </h2>
-            <p class="paragraph">
+            <p class="feature-heading__paragraph paragraph">
               Manage provides all the functionality your team needs, without the
               complexity. Our software is tailor-made for modern digital product
               teams.
@@ -117,12 +117,12 @@
           <div class="feature__content-box">
             <div class="feature__content">
               <!-- FEATURE 1 -->
-              <div class="feature__number m-r-3">01</div>
-              <div class="feature__number-content m-b-5">
-                <h5 class="heading-tertiary m-b-2">
+              <div class="feature__number">01</div>
+              <div class="feature__number-content">
+                <h5 class="feature__number-heading heading-tertiary">
                   Track company-wide progress
                 </h5>
-                <p class="paragraph">
+                <p class="feature__number-paragraph paragraph">
                   See how your day-to-day tasks fit into the wider vision. Go
                   from tracking progress at the milestone level all the way done
                   to the smallest of details. Never lose sight of the bigger
@@ -132,12 +132,12 @@
             </div>
             <!-- FEATURE 2 -->
             <div class="feature__content">
-              <div class="feature__number m-r-3">02</div>
-              <div class="feature__number-content m-b-5">
-                <h5 class="heading-tertiary m-b-2">
+              <div class="feature__number">02</div>
+              <div class="feature__number-content">
+                <h5 class="feature__number-heading heading-tertiary">
                   Advanced built-in reports
                 </h5>
-                <p class="paragraph">
+                <p class="feature__number-paragraph paragraph">
                   Set internal delivery estimates and track progress toward
                   company goals. Our customisable dashboard helps you build out
                   the reports you need to keep key stakeholders informed.
@@ -146,12 +146,12 @@
             </div>
             <!-- FEATURE 3 -->
             <div class="feature__content">
-              <div class="feature__number m-r-3">03</div>
-              <div class="feature__number-content m-b-5">
-                <h5 class="heading-tertiary m-b-2">
+              <div class="feature__number">03</div>
+              <div class="feature__number-content">
+                <h5 class="feature__number-heading heading-tertiary">
                   Everything you need in one place
                 </h5>
-                <p class="paragraph">
+                <p class="feature__number-paragraph paragraph">
                   Stop jumping from one service to another to communicate, store
                   files, track tasks and share documents. Manage offers an
                   all-in-one team productivity solution.
@@ -162,52 +162,58 @@
         </div>
       </section>
 
-      <section class="testimonials m-t-10 m-b-15 u-center-text">
-        <h2 class="heading-secondary m-b-10">What they've said</h2>
-        <div class="slider m-x-3">
-          <div class="slider__item p-x-3">
+      <section class="testimonials u-center-text">
+        <h2 class="testimonials__heading heading-secondary">
+          What they've said
+        </h2>
+        <div class="slider">
+          <div class="slider__item">
             <img
               class="slider__image"
               src="./images/avatar-anisha.png"
               alt="avatar-anisha"
             />
-            <h5 class="heading-tertiary m-t-4 m-b-1">Anisha Li</h5>
-            <p class="paragraph m-t-2 m-b-1">
+            <h5 class="slider__heading heading-tertiary">Anisha Li</h5>
+            <p class="slider__paragraph paragraph">
               “Manage has supercharged our team’s workflow. The ability to
               maintain visibility on larger milestones at all times keeps
               everyone motivated.”
             </p>
           </div>
-          <div class="slider__item p-x-3">
+          <div class="slider__item">
             <img
               class="slider__image"
               src="./images/avatar-ali.png"
               alt="avatar-ali"
             />
-            <h5 class="heading-tertiary m-t-4 m-b-1">Ali Bravo</h5>
-            <p class="paragraph m-t-2 m-b-1">
+            <h5 class="slider__heading heading-tertiary">Ali Bravo</h5>
+            <p class="slider__paragraph paragraph">
               “We have been able to cancel so many other subscriptions since
               using Manage. There is no more cross-channel confusion and
               everyone is much more focused.”
             </p>
           </div>
-          <div class="slider__item p-x-3">
+          <div class="slider__item">
             <img
               class="slider__image"
               src="./images/avatar-richard.png"
               alt="avatar-richard"
             />
-            <h5 class="heading-tertiary m-t-4 m-b-1">Richard Watts</h5>
-            <p class="paragraph m-t-2 m-b-1">
+            <h5 class="slider__heading heading-tertiary">Richard Watts</h5>
+            <p class="slider__paragraph paragraph">
               “Manage allows us to provide structure and process. It keeps us
               organized and focused. I can’t stop recommending them to everyone
               I talk to!”
             </p>
           </div>
-          <!-- <div class="slider__item p-x-3">
-            <img class="slider__image" src="./images/avatar-shanai.png" alt="avatar-shanai" />
-            <h5 class="heading-tertiary m-t-4 m-b-1">Shanai Gough</h5>
-            <p class="paragraph m-t-2 m-b-1">
+          <!-- <div class="slider__item">
+            <img
+              class="slider__image"
+              src="./images/avatar-shanai.png"
+              alt="avatar-shanai"
+            />
+            <h5 class="slider__heading heading-tertiary">Shanai Gough</h5>
+            <p class="slider__paragraph paragraph">
               “Their software allows us to track, manage and collaborate on our
               projects from anywhere. It keeps the whole team in-sync without
               being intrusive.”
@@ -216,6 +222,91 @@
         </div>
         <a href="#" class="btn btn--primary">Get Started</a>
       </section>
+
+      <section class="ready">
+        <div class="ready__wrapper container">
+          <h2 class="ready__heading heading-secondary u-text-white">
+            Simplify how your team works today.
+          </h2>
+          <a href="#" class="btn btn--secondary">Get Started</a>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__content-header">
+          <a href="#" class="footer__image-link">
+            <img
+              class="footer__image"
+              src="./images/logo-footer.svg"
+              alt="logo"
+            />
+          </a>
+          <div class="footer__social-box">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/icon-facebook.svg"
+                class="footer__social-icon"
+                alt="facebook"
+            /></a>
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/icon-youtube.svg"
+                class="footer__social-icon"
+                alt="youtube"
+            /></a>
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/icon-twitter.svg"
+                class="footer__social-icon"
+                alt="twitter"
+            /></a>
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/icon-pinterest.svg"
+                class="footer__social-icon"
+                alt="pinterest"
+            /></a>
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/icon-instagram.svg"
+                class="footer__social-icon"
+                alt="instagram"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer__list">
+          <a href="#" class="footer__link">Home</a>
+          <a href="#" class="footer__link">Pricing</a>
+          <a href="#" class="footer__link">Products</a>
+          <a href="#" class="footer__link">About Us</a>
+        </div>
+
+        <div class="footer__list">
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Community</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </div>
+
+        <div class="footer__content-search">
+          <form type="submit" class="footer__form-box">
+            <input
+              class="footer__input"
+              type="email"
+              placeholder="Updates in your inbox..."
+            />
+            <button
+              type="submit"
+              class="btn btn--primary u-box-shadow-none footer__input-btn"
+            >
+              Go
+            </button>
+          </form>
+          <p class="footer__copyright">Copyright 2023. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

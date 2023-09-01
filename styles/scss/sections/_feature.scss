@@ -8,8 +8,12 @@
     justify-content: space-between;
   }
 
-  &__heading {
+  .feature-heading {
     width: 45%;
+
+    &__title {
+      margin-bottom: 3rem;
+    }
   }
 
   &__content {
@@ -25,11 +29,20 @@
     @include text($fs-400, 700);
     display: inline-block;
     margin-top: -1rem;
+    margin-right: 3rem;
     border-radius: 10rem;
     width: 7rem;
     height: 4rem;
     padding: 1rem 2.5rem;
     color: $white;
     background-color: $brightRed;
+
+    &-content {
+      margin-bottom: 5rem;
+    }
+
+    &-heading {
+      margin-bottom: 2rem;
+    }
   }
 }

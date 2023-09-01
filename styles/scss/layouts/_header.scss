@@ -17,4 +17,9 @@
   &__content {
     width: 50%;
   }
+
+  &__heading,
+  &__paragraph {
+    margin-bottom: 3rem;
+  }
 }

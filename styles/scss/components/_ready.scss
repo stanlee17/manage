@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.ready {
+  background-color: $brightRed;
+  padding: 8rem 0;
+
+  &__wrapper {
+    @include flexbox($justify: space-between, $align: center);
+  }
+
+  &__heading {
+    max-width: 45%;
+  }
+}
