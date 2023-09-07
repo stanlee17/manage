@@ -14,7 +14,7 @@ $veryLightGray: #fafafa;
 $white: #ffffff;
 
 /* FONT SIZES */
-$fs-xl: 5.6rem;
+$fs-xl: clamp(4rem, 4vw + 1rem, 5.6rem);
 $fs-700: 4rem;
 $fs-600: 2.4rem;
 $fs-500: 1.8rem;

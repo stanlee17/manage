@@ -2,6 +2,7 @@
 
 .ready {
   background-color: $brightRed;
+  position: relative;
   padding: 8rem 0;
 
   &__wrapper {
@@ -10,5 +11,34 @@
 
   &__heading {
     max-width: 45%;
+    z-index: 100;
+  }
+
+  &::before {
+    content: url('../../../images/bg-simplify-section-desktop.svg');
+    @include position($position: absolute, $bottom: -4px, $right: 0);
+    z-index: 1;
+  }
+
+  @include breakpoint(lg) {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__heading {
+      max-width: 75%;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    &::before {
+      @include position($position: absolute, $bottom: -4px, $right: -65rem);
+    }
+  }
+
+  @include breakpoint(sm) {
+    &__heading {
+      max-width: 100%;
+    }
   }
 }

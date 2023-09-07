@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <link rel="stylesheet" href="./styles/globals.css" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
@@ -78,6 +81,14 @@
           aria-label="Go to the get started page"
           >Get Started</a
         >
+
+        <div class="navigation__hamburger-box">
+          <img
+            class="navigation__hamburger"
+            src="./images/icon-hamburger.svg"
+            alt="hamburger-icon"
+          />
+        </div>
       </div>
     </nav>
 
@@ -117,46 +128,42 @@
           <div class="feature__content-box">
             <div class="feature__content">
               <!-- FEATURE 1 -->
-              <div class="feature__number">01</div>
-              <div class="feature__number-content">
-                <h5 class="feature__number-heading heading-tertiary">
-                  Track company-wide progress
-                </h5>
-                <p class="feature__number-paragraph paragraph">
-                  See how your day-to-day tasks fit into the wider vision. Go
-                  from tracking progress at the milestone level all the way done
-                  to the smallest of details. Never lose sight of the bigger
-                  picture again.
+              <div>
+                <div class="feature__number-box">
+                  <div class="feature__number">01</div>
+                  <h5 class="feature__heading heading-tertiary">
+                    Track company-wide progress
+                  </h5>
+                </div>
+                <p class="feature__paragraph paragraph">
+                  See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
                 </p>
               </div>
-            </div>
             <!-- FEATURE 2 -->
-            <div class="feature__content">
-              <div class="feature__number">02</div>
-              <div class="feature__number-content">
-                <h5 class="feature__number-heading heading-tertiary">
+            <div>
+              <div class="feature__number-box">
+                <div class="feature__number">02</div>
+                <h5 class="feature__heading heading-tertiary">
                   Advanced built-in reports
                 </h5>
-                <p class="feature__number-paragraph paragraph">
-                  Set internal delivery estimates and track progress toward
-                  company goals. Our customisable dashboard helps you build out
-                  the reports you need to keep key stakeholders informed.
-                </p>
               </div>
+              <p class="feature__paragraph paragraph">
+                Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+              </p>
             </div>
             <!-- FEATURE 3 -->
-            <div class="feature__content">
-              <div class="feature__number">03</div>
-              <div class="feature__number-content">
-                <h5 class="feature__number-heading heading-tertiary">
+            <div>
+              <div class="feature__number-box">
+                <div class="feature__number">03</div>
+                <h5 class="feature__heading heading-tertiary">
                   Everything you need in one place
                 </h5>
-                <p class="feature__number-paragraph paragraph">
-                  Stop jumping from one service to another to communicate, store
-                  files, track tasks and share documents. Manage offers an
-                  all-in-one team productivity solution.
-                </p>
               </div>
+              <p class="feature__paragraph paragraph">
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
             </div>
           </div>
         </div>
@@ -206,7 +213,7 @@
               I talk to!”
             </p>
           </div>
-          <!-- <div class="slider__item">
+          <div class="slider__item">
             <img
               class="slider__image"
               src="./images/avatar-shanai.png"
@@ -218,7 +225,7 @@
               projects from anywhere. It keeps the whole team in-sync without
               being intrusive.”
             </p>
-          </div> -->
+          </div>
         </div>
         <a href="#" class="btn btn--primary">Get Started</a>
       </section>
@@ -276,7 +283,7 @@
             /></a>
           </div>
         </div>
-
+        
         <div class="footer__list">
           <a href="#" class="footer__link">Home</a>
           <a href="#" class="footer__link">Pricing</a>
@@ -308,5 +315,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

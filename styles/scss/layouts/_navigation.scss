@@ -21,4 +21,20 @@
   &__link {
     display: block;
   }
+
+  &__hamburger-box {
+    display: none;
+    cursor: pointer;
+  }
+
+  @include breakpoint(lg) {
+    &__list,
+    .btn {
+      display: none;
+    }
+
+    &__hamburger-box {
+      display: block;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .feature {
+  position: relative;
   padding: 10rem 0;
 
   &__wrapper {
@@ -9,26 +10,30 @@
   }
 
   .feature-heading {
-    width: 45%;
+    max-width: 40%;
 
     &__title {
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
     }
   }
 
   &__content {
     display: flex;
+    flex-direction: column;
     align-items: start;
 
     &-box {
-      width: 45%;
+      max-width: 45%;
+    }
+
+    & > *:not(:last-of-type) {
+      margin-bottom: 3rem;
     }
   }
 
   &__number {
     @include text($fs-400, 700);
     display: inline-block;
-    margin-top: -1rem;
     margin-right: 3rem;
     border-radius: 10rem;
     width: 7rem;
@@ -37,12 +42,86 @@
     color: $white;
     background-color: $brightRed;
 
-    &-content {
-      margin-bottom: 5rem;
+    &-box {
+      display: flex;
+      align-items: center;
+      min-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__paragraph {
+    margin-left: 10rem;
+  }
+
+  &::after {
+    content: '';
+    background: url('../../../images/bg-tablet-pattern.svg');
+    width: 970px;
+    height: 970px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include position($position: absolute, $top: 40rem, $left: -60rem);
+    z-index: -1;
+  }
+
+  @include breakpoint(lg) {
+    padding: 10rem 0 1rem 0;
+
+    &__wrapper {
+      flex-direction: column;
     }
 
-    &-heading {
-      margin-bottom: 2rem;
+    .feature-heading {
+      max-width: 75%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__content {
+      margin: 5rem 0;
+
+      &-box {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      & > *:not(:last-of-type) {
+        margin-bottom: 5rem;
+      }
+    }
+
+    &__number {
+      margin-right: 1rem;
+
+      &-box {
+        background-color: $veryPaleRed;
+        border-top-left-radius: 10rem;
+        border-bottom-left-radius: 10rem;
+        margin-bottom: 1.5rem;
+        min-width: 105%;
+      }
+    }
+
+    &__paragraph {
+      margin-left: 0;
+    }
+
+    &::after {
+      @include position($position: absolute, $bottom: 95rem, $right: -20rem);
+      width: 380px;
+      height: 380px;
+    }
+  }
+
+  @include breakpoint(sm) {
+    .feature-heading {
+      max-width: 95%;
+    }
+
+    &::after {
+      @include position($position: absolute, $bottom: 100rem, $right: -20rem);
     }
   }
 }

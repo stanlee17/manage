@@ -8,6 +8,7 @@
   font-weight: 700;
   border-radius: 10rem;
   cursor: pointer;
+  z-index: 100;
 
   &--primary {
     background-color: $brightRed;

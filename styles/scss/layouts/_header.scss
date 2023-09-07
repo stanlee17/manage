@@ -6,20 +6,68 @@
 
   &__wrapper {
     @include flexbox($justify: space-between, $align: center);
-
-    &::after {
-      content: url('../../../images/bg-tablet-pattern.svg');
-      @include position($position: absolute, $bottom: 20rem, $right: -10rem);
-      z-index: -1;
-    }
   }
 
   &__content {
-    width: 50%;
+    max-width: 50%;
   }
 
   &__heading,
   &__paragraph {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    max-width: 50%;
+  }
+
+  &::after {
+    content: url('../../../images/bg-tablet-pattern.svg');
+    @include position($position: absolute, $bottom: 20rem, $right: -10rem);
+    z-index: -1;
+  }
+
+  @include breakpoint(lg) {
+    padding: 0 0 3rem 0;
+
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    &__content,
+    &__image {
+      max-width: 75%;
+    }
+
+    &__content {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    &__heading {
+      margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    &::after {
+      @include position($position: absolute, $bottom: 45rem, $right: -25rem);
+    }
+  }
+
+  @include breakpoint(sm) {
+    padding: 0;
+
+    &__content,
+    &__image {
+      max-width: 95%;
+    }
+
+    &::after {
+      @include position($position: absolute, $bottom: 42rem, $right: -40rem);
+    }
   }
 }

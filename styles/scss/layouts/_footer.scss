@@ -61,4 +61,32 @@
     @include text($fs-xs, 400);
     color: $darkGray;
   }
+
+  @include breakpoint(lg) {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &__content-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    &__image-link {
+      margin-bottom: 1.5rem;
+    }
+
+    &__list {
+      flex-direction: row;
+      margin: 1.5rem auto;
+    }
+
+    &__content-search {
+      text-align: center;
+    }
+
+    &__form-box {
+      margin: 3rem 0;
+    }
+  }
 }
